@@ -14,5 +14,14 @@ public final class BillCalculator {
 	 * @param items the array of BillItem objects
 	 * @return the subtotal
 	 */
+	public static double calculateTotal(BillItem[] items) {
+		double total = 0.0;
+		for (BillItem item : items) {
+			if (item != null) {
+				total += item.getAmount();
+			}
+		}
+		return total;
+	}
 	
 	
