@@ -1,61 +1,66 @@
 package edu.westga.cs1302.bill.model;
-/** 
- * gives static method to calculate bill total
+
+/**
+ * Provides static methods to calculate bill totals.
  * 
  * @author CS 1302
  * @version Fall 2025
  */
 public final class BillCalculator {
-	private BillCalculator() {
+
+    private BillCalculator() {
+    }
+
+    /**
+     * Calculates the subtotal of all items.
+     * 
+     * @param items the array of BillItem objects (may contain nulls)
+     * @return the subtotal
+     */
+    public static double calculateSubtotal(BillItem[] items) {
+        double subtotal = 0.0;
+        for (BillItem item : items) {
+            if (item != null) {
+                subtotal += item.getAmount();
+            }
+        }
+        return subtotal;
+    }
+
+    /**
+     * Calculates the tax amount.
+     * 
+     * @param items the array of BillItem objects
+     * @param taxRate the tax rate (e.g., 0.07 for 7%)
+     * @return the tax
+     */
+    public static double calculateTax(BillItem[] items, double taxRate) {
+        return calculateSubtotal(items) * taxRate;
+    }
+
+    /**
+     * Calculates the tip amount.
+     * 
+     * @param items the array of BillItem objects
+     * @param tipRate the tip rate (e.g., 0.15 for 15%)
+     * @return the tip
+     */
+    public static double calculateTip(BillItem[] items, double tipRate) {
+        return calculateSubtotal(items) * tipRate;
+    }
+
+    /**
+     * Calculates the total bill.
+     * 
+     * @param items the array of BillItem objects
+     * @param taxRate the tax rate
+     * @param tipRate the tip rate
+     * @return the total
+     */
+    public static double calculateTotal(BillItem[] items, double taxRate, double tipRate) {
+        double subtotal = calculateSubtotal(items);
+        double tax = subtotal * taxRate;
+        double tip = subtotal * tipRate;
+        return subtotal + tax + tip;
+    }
 }
-	/**
-	 * Calculates the total of items
-	 * 
-	 * @param items the array of BillItem objects
-	 * @return the subtotal
-	 */
-	public static double calculateTotal(BillItem[] items) {
-		double total = 0.0;
-		for (BillItem item : items) {
-			if (item != null) {
-				total += item.getAmount();
-			}
-		}
-		return total;
-	}
-	/**
-	 * calculates the tax amount
-	 * 
-	 * @param items the array of BillItem objects
-	 * @param taxRate the tax rate
-	 * @return the tax
-	 */
-	public static double calculateTax(BillItem[] items, double taxRate) {
-		return calculateTotal(items) * taxRate;
-	}
-/**
- * calculates the tip amount
- * 
- * @param items   the array of BillItem objects
- * @param tipRate the tip rate
- * @return the tip
- */
-   public static double calculateTip(BillItem[] items, double tipRate) {
-	   return calculateTotal(items) * tipRate;   
-   }
-   /**
-    * calculates the total bill
-    * 
-    * @param items the array of BillItem
-    * @param taxRate the tax rate
-    * @param tipRate the tip rate
-    * @return the total bill
-    */
-   public static double calculateToal(BillItem[] items, double taxRate, double tipRate) {
-	   double total = calculateTotal(items);
-	   double tax = total * taxRate;
-	   double tip = total * tipRate;
-	   return total + tax + tip;
-   }
-   }
-	
