@@ -33,4 +33,14 @@ public final class BillCalculator {
 	public static double calculateTax(BillItem[] items, double taxRate) {
 		return calculateTotal(items) * taxRate;
 	}
+/**
+ * calculates the tip amount
+ * 
+ * @param items   the array of BillItem objects
+ * @param tipRate the tip rate
+ * @return the tip
+ */
+   public static double calculateTip(BillItem[] items, double tipRate) {
+	   return calculateTotal(items) * tipRate;   
+   }
 	
