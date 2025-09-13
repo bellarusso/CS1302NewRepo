@@ -4,8 +4,6 @@ import edu.westga.cs1302.bill.model.Bill;
 import edu.westga.cs1302.bill.model.BillItem;
 import edu.westga.cs1302.bill.model.BillCalculator;
 
-import java.util.ArrayList;
-
 /** Supports displaying the information contained in a Bill.
  * 
  * @author CS 1302
