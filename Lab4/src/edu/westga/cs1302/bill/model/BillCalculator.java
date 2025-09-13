@@ -23,5 +23,14 @@ public final class BillCalculator {
 		}
 		return total;
 	}
-	
+	/**
+	 * calculates the tax amount
+	 * 
+	 * @param items the array of BillItem objects
+	 * @param taxRate the tax rate
+	 * @return the tax
+	 */
+	public static double calculateTax(BillItem[] items, double taxRate) {
+		return calculateTotal(items) * taxRate;
+	}
 	
