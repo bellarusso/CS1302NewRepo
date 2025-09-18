@@ -1,0 +1,130 @@
+commit e12e9e8989a9feefa9ce8be84af812c3be4bc77e
+Author: bellarusso <Irusso1@my.westga.edu>
+Date:   Sat Sep 13 16:34:46 2025 -0400
+
+    Checkstyle for BillView class
+
+commit 2cb961fbc62a87f6c2ad26cbb2b98eb81bb0a7f2
+Author: bellarusso <Irusso1@my.westga.edu>
+Date:   Sat Sep 13 16:29:34 2025 -0400
+
+    Fixed checkstyle errors for test classes
+
+commit eb1fcdfe419cc0326fb5a36030172053949cb70e
+Author: bellarusso <Irusso1@my.westga.edu>
+Date:   Sat Sep 13 16:17:12 2025 -0400
+
+    Checkstyle for BillCalculator class
+
+commit 0cb3894e848307c6c331d6d0c8b4d15526013a80
+Author: bellarusso <Irusso1@my.westga.edu>
+Date:   Sat Sep 13 16:13:34 2025 -0400
+
+    Checkstyle for BillItem class
+
+commit 8523a315b20c22d4df24a1eace1726ee2c1cfdd3
+Author: bellarusso <Irusso1@my.westga.edu>
+Date:   Sat Sep 13 16:03:55 2025 -0400
+
+    Fixed checkstyle warning for Bill class
+
+commit 8d781c9a749eab2f5f02fd7134a2e127abbddcf4
+Author: bellarusso <Irusso1@my.westga.edu>
+Date:   Sat Sep 13 15:50:58 2025 -0400
+
+    Activated checkstyle for lab4
+
+commit 13e85fc0c729a7b77a2a525456c1f65c2eb82755
+Author: bellarusso <Irusso1@my.westga.edu>
+Date:   Fri Sep 12 22:09:29 2025 -0400
+
+    Refactor BillView to use BillCalculator with arrays
+    Convert Bill array to match BillCalculator
+    Looped through array to append item names and amounts to output a string
+
+commit ae93752a74273b73b8a32244f0c5c2c61064fdb7
+Author: bellarusso <Irusso1@my.westga.edu>
+Date:   Fri Sep 12 21:38:38 2025 -0400
+
+    Redefined methods
+
+commit 8a3ceee97911b8165a05c31b47bc91cb9a389a1c
+Author: bellarusso <Irusso1@my.westga.edu>
+Date:   Fri Sep 12 21:36:09 2025 -0400
+
+    Created calculateTotal method
+    includes the array, taxRate and tipRate as parameters
+    uses variable total to call calculateTotal method
+    creates a double variable named tax that equals the total times the tipRate
+    creates a double variable named tip that equals the total times the tipRate
+    returns total plus tax and tip
+
+commit 663618458ea55c5dd7575d566a2e5528a0ef368d
+Author: bellarusso <Irusso1@my.westga.edu>
+Date:   Fri Sep 12 21:31:05 2025 -0400
+
+    Createed calculateTip method.
+    uses params of array and the double tipRate
+    returns the calculatedTotal times the tip rate as a double
+
+commit 70c94eab76a6a64a7c4ba2243de5b52dbf8707b8
+Author: bellarusso <Irusso1@my.westga.edu>
+Date:   Fri Sep 12 21:28:01 2025 -0400
+
+    Create calculateTax method.
+    returns the calculated total times the tax rate and returns double
+    includes array and double taxRate in parameters
+
+commit 2be034477551977cec004b81eac1600033208114
+Author: bellarusso <Irusso1@my.westga.edu>
+Date:   Fri Sep 12 21:22:08 2025 -0400
+
+    Created calculateTotal public static method with an Array. Created total double variable that calls to getAmount
+
+commit 76f68a57ad63dd6686e229f488501b3ce1fd0d8f
+Author: bellarusso <Irusso1@my.westga.edu>
+Date:   Fri Sep 12 21:17:10 2025 -0400
+
+    Added specs for calculateTotal method
+
+commit d901970320e428c42468ac22ff3068a774a77ec5
+Author: bellarusso <Irusso1@my.westga.edu>
+Date:   Fri Sep 12 21:09:54 2025 -0400
+
+    Specs for BillCalculator class
+
+commit 4f48432fb4aeaae023357c6096da48d694265953
+Author: bellarusso <Irusso1@my.westga.edu>
+Date:   Fri Sep 12 21:06:23 2025 -0400
+
+    Add BillCalculator class into lab4
+
+commit 234ee63b5a12116d375c9f8a2fc37232208d5721
+Author: bellarusso <Irusso1@my.westga.edu>
+Date:   Fri Sep 12 20:53:10 2025 -0400
+
+    Add .gitignore and remove files from tracking
+
+commit 41699665219d2552f4f78a79d287c649fe25d27f
+Author: bellarusso <Irusso1@my.westga.edu>
+Date:   Fri Sep 12 20:49:32 2025 -0400
+
+    Converted the fields of BillItem class to be final
+
+commit b7fe7eabecbaf9ca076369b84db5f0dce5a1e961
+Author: bellarusso <Irusso1@my.westga.edu>
+Date:   Thu Sep 11 13:01:48 2025 -0400
+
+    Add lab4 folder and files
+
+commit 256cb33916483390b54456122e73e2fbeffdb67d
+Author: bellarusso <Irusso1@my.westga.edu>
+Date:   Thu Sep 11 12:34:36 2025 -0400
+
+    Update README.md
+
+commit 90ef34669ac3dbd8de50ed3e3c788b456112ac4a
+Author: bellarusso <Irusso1@my.westga.edu>
+Date:   Thu Sep 11 12:29:38 2025 -0400
+
+    Initial commit
